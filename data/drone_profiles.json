@@ -1,0 +1,62 @@
+{
+  "dji_mini_4k": {
+    "display_name": "DJI Mini 4K",
+    "takeoff_weight_g": 249,
+    "max_wind_resistance_mps": 10.7,
+    "camera_equipped": true,
+    "rain_tolerance": "not_waterproof",
+    "aliases": ["mini 4k", "dji mini 4k", "mini4k"],
+    "notes": [
+      "Under 250g — may qualify for reduced regulatory requirements in some countries.",
+      "Not waterproof — any rain poses a risk of electronic damage."
+    ]
+  },
+  "dji_neo": {
+    "display_name": "DJI Neo",
+    "takeoff_weight_g": 135,
+    "max_wind_resistance_mps": 8.0,
+    "camera_equipped": true,
+    "rain_tolerance": "not_waterproof",
+    "aliases": ["neo", "dji neo"],
+    "notes": [
+      "Lightest DJI consumer drone — more susceptible to wind drift than heavier models.",
+      "Not waterproof — any rain poses a risk of electronic damage."
+    ]
+  },
+  "dji_mini_3_pro": {
+    "display_name": "DJI Mini 3 Pro",
+    "takeoff_weight_g": 249,
+    "max_wind_resistance_mps": 10.7,
+    "camera_equipped": true,
+    "rain_tolerance": "not_waterproof",
+    "aliases": ["mini 3 pro", "mini3pro", "dji mini 3 pro"],
+    "notes": [
+      "Under 250g — may qualify for reduced regulatory requirements in some countries.",
+      "Not waterproof — any rain poses a risk of electronic damage."
+    ]
+  },
+  "dji_air_3": {
+    "display_name": "DJI Air 3",
+    "takeoff_weight_g": 720,
+    "max_wind_resistance_mps": 12.0,
+    "camera_equipped": true,
+    "rain_tolerance": "not_waterproof",
+    "aliases": ["air 3", "dji air 3", "air3"],
+    "notes": [
+      "Heavier frame provides better wind stability than sub-250g drones.",
+      "Not waterproof — any rain poses a risk of electronic damage."
+    ]
+  },
+  "dji_avata_2": {
+    "display_name": "DJI Avata 2",
+    "takeoff_weight_g": 377,
+    "max_wind_resistance_mps": 10.7,
+    "camera_equipped": true,
+    "rain_tolerance": "not_waterproof",
+    "aliases": ["avata", "avata 2", "dji avata", "dji avata 2"],
+    "notes": [
+      "FPV drone — designed for immersive flight, not survey or photography missions.",
+      "Not waterproof — any rain poses a risk of electronic damage."
+    ]
+  }
+}

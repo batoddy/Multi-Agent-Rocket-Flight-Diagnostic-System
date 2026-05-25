@@ -1,0 +1,56 @@
+Initial Project Plan
+1. Short Description of the Planned System and Its Goal
+
+The planned system is a Python-based Drone Flight Suitability Assistant. Its goal is to help users decide whether a drone flight is suitable for a selected location and time.
+
+The user will enter a natural language request such as:
+
+Tomorrow at 12:00 I want to fly a drone near Riga National Library. Is it suitable?
+
+The system will analyze the location, date, time, weather forecast, basic environmental context, and drone-related conditions. The final output will be a simple suitability recommendation such as Suitable, Suitable with caution, Not ideal, or Not recommended.
+
+The system does not provide legal flight permission. It only gives preliminary decision support.
+
+2. Description of the AI or Agent-Based Approach
+
+The system will use a simple multi-agent structure. A central CoordinatorAgent will control the workflow and call other agents when needed.
+
+Planned agents:
+
+CoordinatorAgent – understands the user request and manages the workflow.
+LocationResolverAgent – converts location text into coordinates.
+WeatherForecastAgent – retrieves weather forecast data.
+LocationContextAgent – analyzes basic environmental context.
+SuitabilityScoringAgent – calculates a suitability score.
+ReportAgent – prepares the final answer.
+
+The CoordinatorAgent will use Gemini to extract structured information from the user query, such as location, date, time, timezone, and drone model.
+
+3. List of Tools That Will Be Used
+
+The planned tools are:
+
+Gemini LLM – extracts structured information from user input.
+GeocodingTool – uses OpenStreetMap Nominatim API to find coordinates.
+WeatherAPITool – uses Open-Meteo API to get hourly weather forecast.
+LocationContextTool – uses Overpass API to get basic map context.
+DroneProfileTool – loads drone capability data from a local JSON file.
+
+These tools allow the system to use real external data during execution.
+
+4. Preliminary Programming Concepts Required
+
+The project will require:
+
+- object-oriented programming,
+- classes and methods,
+- API requests,
+- JSON parsing,
+- file reading and writing,
+- environment variables,
+- error handling,
+- modular project structure,
+- rule-based decision-making,
+- multi-agent workflow design.
+
+These concepts are needed because the system will be divided into separate agents and tools, communicate with external APIs, process JSON data, and generate a final decision.
